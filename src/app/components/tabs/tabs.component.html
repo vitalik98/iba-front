@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <td *ngFor="let tab of TABS" (click)="setSelectedSystem(tab.name)">
+      {{tab.name}}<br>
+      <label *ngIf="selectedSystem == tab.name">
+        <!--<input [(ngModel)]="tab.command" type="text"/><br>
+        <textarea [(ngModel)]="tab.input"></textarea>-->
+        <p>{{tab.url}}</p>
+        <button (keyup)="0">Hack</button><br>
+      </label>
+    </td>
+  </tr>
+</table>
